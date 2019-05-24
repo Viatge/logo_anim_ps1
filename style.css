@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'clarendon';
+    src: url('police/clarendon/unicode.clarendb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'aileron';
+    src: url('police/aileron/Aileron-Light.otf') format('truetype');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+}
+
+.colorpolice {
+    color: rgba(4, 48, 143, 0);
+}
+
+h1 {
+    font-family: 'clarendon', Arial, Helvetica, sans-serif;
+    font-size: 3.55em;
+}
+
+h2, p{
+    font-family: 'aileron', Arial, Helvetica, sans-serif;
+}
+
+.title{
+    display: flex;
+}
+
+#tm{
+    position: relative;
+    top: 93px;
+    left: 12px;
+    font-weight: bold;
+    font-size: 0.7em;
+}
+
+.computer {
+    font-size: 1.55em;
+}
+
+.color1carrelt {
+    background-color: #DE0227;
+}
+
+.container {
+    height: 750px;
+    width: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carreprincip {
+    height: 300px;
+    width: 300px;
+    transform: rotate(45deg);
+    margin-bottom: 33px;
+    background: linear-gradient(45deg, rgba(228, 52, 16, 1) 0%, rgba(242, 226, 12, 1) 50%, rgba(228, 52, 16, 1) 100%);
+}
+
+.carretrans {
+    height: 350px;
+    width: 350px;
+    transform: rotate(45deg);
+    transform: translate(-33px, -612px);
+    margin-bottom: 33px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.carre1 {
+    height: 100%;
+    width: 100%;
+    transform: translate(0px, 0px);
+    background: linear-gradient(45deg, rgba(222, 2, 39, 1) 1%, rgba(242, 226, 12, 0.3) 50%, rgba(222, 2, 39, 0) 100%);
+}
+
+.carre2 {
+    height: 100%;
+    width: 100%;
+    transform: translate(0px, -300px);
+    background: linear-gradient(45deg, rgba(222, 2, 39, 1) 1%, rgba(242, 226, 12, 0.3) 50%, rgba(222, 2, 39, 0) 100%);
+}
+
+.container:hover .carre1 {
+    height: 120px;
+    width: 120px;
+    transform: translate(50px, 30%);
+    transition-delay: 0.1s;
+    transition-duration: 1.1s;
+    transition-timing-function: cubic-bezier(.02, .02, .98, .98);
+    background: linear-gradient(45deg, rgba(222, 2, 39, 1) 0%, rgba(242, 226, 12, 0) 50%, rgba(222, 2, 39, 0) 100%);
+}
+
+.container:hover .carre2 {
+    height: 120px;
+    width: 120px;
+    transform: translate(130px, 30%);
+    transition-delay: 0.1s;
+    transition-duration: 1.1s;
+    transition-timing-function: cubic-bezier(.02, .02, .98, .98);
+    background: linear-gradient(45deg, rgba(222, 2, 39, 0) 0%, rgba(242, 226, 12, 0) 50%, rgba(222, 2, 39, 1) 100%);
+}
+
+.container:hover .colorpolice {
+    transition-delay: 0.9s;
+    transition-duration: 0.7s;
+    color: rgba(4, 48, 143, 1);
+}
+
+.container:hover .carretrans {
+    transition-duration: 0.4s;
+    background-color: rgba(255, 255, 255, 0);
+}
